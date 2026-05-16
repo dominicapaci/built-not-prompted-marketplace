@@ -6,18 +6,15 @@
     "name": "Dominic Capaci",
     "email": "build@dominiccapaci.com"
   },
-  "metadata": {
-    "pluginRoot": "./plugins"
-  },
   "plugins": [
     {
       "name": "humanizer",
-      "source": "humanizer",
+      "source": "./plugins/humanizer",
       "description": "Strip the tells of AI-written text out of any draft."
     },
     {
       "name": "power-tools",
-      "source": "power-tools",
+      "source": "./plugins/power-tools",
       "description": "The full bundle. Every Built Not Prompted tool in one install."
     }
   ]
