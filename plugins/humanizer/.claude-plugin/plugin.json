@@ -1,6 +1,6 @@
 {
-  "name": "power-tools",
-  "description": "The full Built Not Prompted toolkit. Every tool in one install.",
+  "name": "humanizer",
+  "description": "Strip the tells of AI-written text out of any draft.",
   "version": "1.0.0",
   "author": {
     "name": "Dominic Capaci",
