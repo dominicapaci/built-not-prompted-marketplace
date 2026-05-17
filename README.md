@@ -1,98 +1,49 @@
-# Built Not Prompted — Power Tools
+# Built Not Prompted: Power Tools
 
-Claude Code power tools for content creators, built by [Dominic Capaci](https://skool.com/built-not-prompted).
+The tools I build for the Built Not Prompted community live here. They plug into Claude Code and do real work for you, like cleaning up your writing or pulling your social numbers. New ones get added over time.
 
-This is the official tool library for the **Built Not Prompted** community. Add it once, then pull in tools as you need them.
+The Power Tools classroom walks through all of this on video. This page is just the quick reference.
 
-## Step 1 — Add the marketplace (one time)
+## Connect the toolbox (one time)
 
-Open Claude Code and run:
+In Claude Code, type:
 
 ```
 /plugin marketplace add dominicapaci/built-not-prompted-marketplace
 ```
 
-This just tells Claude Code where the library is. It doesn't load any tools yet.
+That connects your Claude Code to the toolbox. You do this once.
 
-## Step 2 — Install what you want
+## Install a tool
 
-You have two doors.
-
-**One tool at a time** (recommended — keeps your context clean):
+Pick a tool from the list and type its install line, like:
 
 ```
 /plugin install humanizer@built-not-prompted
 ```
 
-**Or the whole bundle** in one shot:
+then `/reload-plugins`.
 
-```
-/plugin install power-tools@built-not-prompted
-```
+When you install, Claude Code asks where to keep the tool. Pick the project you're working in rather than "everywhere," so Claude stays focused.
 
-Pick one path. Don't install the bundle *and* the individual tools, or you'll load duplicates.
+To grab everything at once, install the bundle: `/plugin install power-tools@built-not-prompted`.
 
-Then reload so the tools are live:
+## Get new tools later
 
-```
-/reload-plugins
-```
+When something new is added, type `/plugin marketplace update built-not-prompted`, then `/reload-plugins`. You're current.
 
-## Keep tools scoped to the right projects
-
-A tool only loads where you switch it on. Enable a plugin per project in that
-project's `.claude/settings.json`:
-
-```json
-{
-  "enabledPlugins": {
-    "humanizer@built-not-prompted": true
-  }
-}
-```
-
-Where a plugin isn't enabled, it costs you zero context. This is the point:
-load the tools the project needs, nothing else. The Power Tools classroom has a
-full walkthrough.
-
-## Get new tools
-
-When something new ships, run:
-
-```
-/plugin marketplace update built-not-prompted
-/reload-plugins
-```
-
-## What's inside
+## The tools
 
 | Tool | Install | What it does |
 | ---- | ------- | ------------ |
-| `humanizer` | `/plugin install humanizer@built-not-prompted` | Strips the tells of AI-written text out of any draft. Catches inflated phrasing, em dash overuse, the rule of three, AI vocabulary, and more, then rewrites it to read like a person wrote it. |
-| `pinterest` | `/plugin install pinterest@built-not-prompted` | A Pinterest MCP server with 93 tools for pins, boards, search, ads, catalogs, and analytics. After installing, run `/pinterest:pinterest-setup` and Claude walks you through connecting your account. Requires Node.js. |
-| `power-tools` | `/plugin install power-tools@built-not-prompted` | The bundle of every skill-based tool above, in one install. MCP tools like `pinterest` are installed on their own, not part of this bundle. |
-
-More tools ship regularly. Each one gets a walkthrough video in the [Power Tools classroom](https://skool.com/built-not-prompted).
+| humanizer | `/plugin install humanizer@built-not-prompted` | Rewrites robotic, AI-sounding text so it sounds like you. |
+| pinterest | `/plugin install pinterest@built-not-prompted` | Connects your Pinterest account to Claude. Pull your numbers, write pins, and more. Has a short setup, covered in the classroom. |
+| power-tools | `/plugin install power-tools@built-not-prompted` | Every skill tool in one install. |
 
 ## Using a tool
 
-Once installed and enabled, either ask in plain language ("clean the AI writing
-out of this draft") and Claude picks the tool, or call it directly:
-`/humanizer:humanizer`.
-
-## For maintainers
-
-Each tool is its own plugin under `plugins/<tool>/` and is the source of truth.
-The `power-tools` bundle re-packages every skill-based tool so students can
-install everything at once. Its `skills/` folder is generated. After adding or
-editing a skill tool, run `./sync-bundle.sh`, bump the relevant `version`
-fields, and commit.
-
-The `pinterest` plugin carries a bundled copy of the Pinterest MCP server at
-`server/index.mjs`. To rebuild it after changing the server source, run esbuild
-against the server project and output to that path, then bump the `pinterest`
-plugin version. MCP plugins are skipped by `sync-bundle.sh` on purpose.
+Once a tool is installed, just ask Claude in plain language. Say "clean up the writing in this draft" and it uses the humanizer. Nothing to memorize.
 
 ## Questions
 
-Ask in the Built Not Prompted community. That's the fastest way to get help.
+Post in the Built Not Prompted community.
