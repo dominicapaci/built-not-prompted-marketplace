@@ -1,13 +1,15 @@
 ---
 name: humanizer
-version: 2.3.0
+version: 2.4.0
 description: |
   Remove signs of AI-generated writing from text. Use when editing or reviewing
   text to make it sound more natural and human-written. Based on Wikipedia's
   comprehensive "Signs of AI writing" guide. Detects and fixes patterns including:
   inflated symbolism, promotional language, superficial -ing analyses, vague
   attributions, em dash overuse, rule of three, AI vocabulary words, negative
-  parallelisms, and excessive conjunctive phrases.
+  parallelisms, and excessive conjunctive phrases. Also covers social and
+  marketing copy tells: hook-question clickbait, formula CTAs and sign-offs,
+  hype words, decorative arrows, and invented case studies.
 allowed-tools:
   - Read
   - Write
@@ -375,6 +377,104 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **After:**
 > The cross functional team delivered a high quality, data driven report on our client facing tools. Their decision making process was known for being thorough and detail oriented.
+
+---
+
+## SOCIAL AND MARKETING COPY PATTERNS
+
+These tells show up in short-form work: social posts, captions, hooks, and marketing emails. They are the giveaways AI leaves in copy meant to sell or to be scrolled past.
+
+### 26. Hook-Question Clickbait
+
+**Phrases to watch:** the catch?, want to know the secret?, the best part?, here's the kicker, the brutal truth?, ready to level up?, plot twist?
+
+**Problem:** AI fakes engagement by dropping a tiny rhetorical question right before the payoff. It reads like an infomercial, not a person.
+
+**Before:**
+> We cut ad spend by 40%. The best part? Revenue still went up.
+
+**After:**
+> We cut ad spend by 40% and revenue still went up.
+
+### 27. Formula CTAs and Sign-offs
+
+**Phrases to watch:** if you're serious about [goal], let's..., to your success, here's to your [outcome]
+
+**Problem:** Calls to action and sign-offs collapse into a handful of templates. "If you're serious about X" and "To your success" are AI fingerprints.
+
+**Before:**
+> If you're serious about growing your list, let's connect. To your success, Sam
+
+**After:**
+> Want the template I used? Reply "list" and I'll send it. Talk soon, Sam
+
+### 28. The "Enter:" Reveal
+
+**Phrases to watch:** Enter: [thing], the solution? [thing]
+
+**Problem:** AI announces a thing with a dramatic colon instead of just introducing it.
+
+**Before:**
+> Most tools are bloated. Enter: our lightweight alternative.
+
+**After:**
+> Most tools are bloated. Ours does three things and nothing else.
+
+### 29. Hype Words
+
+**Words to watch:** game-changer, supercharge, revolutionary, transformative, unleash, skyrocket, next-level, this changed everything, 10x
+
+**Problem:** Empty intensifiers that promise a lot and describe nothing.
+
+**Before:**
+> This game-changing framework will supercharge your growth.
+
+**After:**
+> This framework added 300 subscribers in a month. Here is how it works.
+
+### 30. The "No X. No Y. Just Z." Cadence
+
+**Problem:** A three-beat fragment AI uses to sound punchy. Once you notice it, it is everywhere.
+
+**Before:**
+> No fluff. No theory. Just results.
+
+**After:**
+> Here is the exact process, step by step.
+
+### 31. Decorative Arrows
+
+**Problem:** The arrow character used as bullet decoration, often stacked down a post.
+
+**Before:**
+> → Save time
+> → Make more money
+> → Scale faster
+
+**After:**
+> It saves time, which frees you up to take on more clients.
+
+### 32. Invented People and Case Studies
+
+**Problem:** When AI has no real example, it invents a person, usually with a plausible generic name, and gives them an unverifiable result.
+
+**Before:**
+> Take Sarah Chen, a freelancer who tripled her income in 90 days.
+
+**After:**
+> Use a real example, with permission and real numbers, or cut the example.
+
+### 33. Manufactured Drama
+
+**Phrases to watch:** stopped me in my tracks, it hit me like a truck, this one realization, I'll never forget the moment
+
+**Problem:** AI inflates an ordinary moment into a life-changing one to manufacture stakes.
+
+**Before:**
+> Something my mentor said stopped me in my tracks.
+
+**After:**
+> My mentor gave me one piece of advice I still use.
 
 ---
 
