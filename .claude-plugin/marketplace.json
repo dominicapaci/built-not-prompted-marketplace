@@ -28,6 +28,16 @@
       "description": "Write emails, newsletters, and full sequences, and tighten the strategy behind them."
     },
     {
+      "name": "skill-creator",
+      "source": "./plugins/skill-creator",
+      "description": "Anthropic's skill for creating, editing, and evaluating Claude Code skills. Apache-2.0."
+    },
+    {
+      "name": "mcp-builder",
+      "source": "./plugins/mcp-builder",
+      "description": "Anthropic's skill for building high-quality MCP servers in Python or Node/TypeScript. Apache-2.0."
+    },
+    {
       "name": "power-tools",
       "source": "./plugins/power-tools",
       "description": "The full bundle. Every Built Not Prompted tool in one install."

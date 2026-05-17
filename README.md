@@ -40,6 +40,8 @@ When something new is added, type `/plugin marketplace update built-not-prompted
 | pinterest | `/plugin install pinterest@built-not-prompted` | Connects your Pinterest account to Claude. Pull your numbers, write pins, and more. Has a short setup, covered in the classroom. |
 | tiktok-account-analysis | `/plugin install tiktok-account-analysis@built-not-prompted` | Scrapes any TikTok account and gives you a content report you can keep asking questions about. Tells you the scraping cost first. Uses the Apify connector. |
 | email-marketing | `/plugin install email-marketing@built-not-prompted` | Writes emails, newsletters, and full sequences, and helps fix open rates, deliverability, and list strategy. |
+| skill-creator | `/plugin install skill-creator@built-not-prompted` | Anthropic's tool for building and improving your own Claude Code skills. Apache-2.0. |
+| mcp-builder | `/plugin install mcp-builder@built-not-prompted` | Anthropic's tool for building MCP servers. Apache-2.0. |
 | power-tools | `/plugin install power-tools@built-not-prompted` | Every skill tool in one install. |
 
 ## Using a tool

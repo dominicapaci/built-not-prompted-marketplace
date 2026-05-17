@@ -1,0 +1,10 @@
+{
+  "name": "mcp-builder",
+  "description": "Anthropic's skill for building high-quality MCP servers in Python or Node/TypeScript. Redistributed unmodified under Apache-2.0.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Anthropic"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/anthropics/skills"
+}
