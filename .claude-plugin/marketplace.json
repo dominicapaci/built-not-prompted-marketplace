@@ -18,6 +18,11 @@
       "description": "Pinterest MCP server: 93 tools for pins, boards, ads, catalogs, and analytics, plus a guided token-setup skill."
     },
     {
+      "name": "tiktok-account-analysis",
+      "source": "./plugins/tiktok-account-analysis",
+      "description": "Scrape any TikTok account and get a focused content-strategy report you can ask follow-up questions about."
+    },
+    {
       "name": "power-tools",
       "source": "./plugins/power-tools",
       "description": "The full bundle. Every Built Not Prompted tool in one install."

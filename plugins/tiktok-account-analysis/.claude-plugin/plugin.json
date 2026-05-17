@@ -1,0 +1,10 @@
+{
+  "name": "tiktok-account-analysis",
+  "description": "Scrape any TikTok account and get a focused content-strategy report you can ask follow-up questions about.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dominic Capaci",
+    "email": "build@dominiccapaci.com"
+  },
+  "homepage": "https://skool.com/built-not-prompted"
+}
