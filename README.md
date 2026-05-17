@@ -9,7 +9,7 @@ This is the official tool library for the **Built Not Prompted** community. Add 
 Open Claude Code and run:
 
 ```
-/plugin marketplace add dominiccapaci/built-not-prompted-marketplace
+/plugin marketplace add dominicapaci/built-not-prompted-marketplace
 ```
 
 This just tells Claude Code where the library is. It doesn't load any tools yet.
