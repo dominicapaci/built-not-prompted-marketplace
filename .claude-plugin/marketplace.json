@@ -38,6 +38,11 @@
       "description": "Anthropic's skill for building high-quality MCP servers in Python or Node/TypeScript. Apache-2.0."
     },
     {
+      "name": "linkedin-profile-scraper",
+      "source": "./plugins/linkedin-profile-scraper",
+      "description": "Scrape a LinkedIn profile's posts with Apify and export them as a structured CSV with engagement scores."
+    },
+    {
       "name": "power-tools",
       "source": "./plugins/power-tools",
       "description": "The full bundle. Every Built Not Prompted tool in one install."

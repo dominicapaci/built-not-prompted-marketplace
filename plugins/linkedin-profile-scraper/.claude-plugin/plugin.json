@@ -1,0 +1,10 @@
+{
+  "name": "linkedin-profile-scraper",
+  "description": "Scrape a LinkedIn profile's posts with Apify and export them as a structured CSV with engagement scores.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dominic Capaci",
+    "email": "build@dominiccapaci.com"
+  },
+  "homepage": "https://skool.com/built-not-prompted"
+}

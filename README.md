@@ -42,6 +42,7 @@ When something new is added, type `/plugin marketplace update built-not-prompted
 | email-marketing | `/plugin install email-marketing@built-not-prompted` | Writes emails, newsletters, and full sequences, and helps fix open rates, deliverability, and list strategy. |
 | skill-creator | `/plugin install skill-creator@built-not-prompted` | Anthropic's tool for building and improving your own Claude Code skills. Apache-2.0. |
 | mcp-builder | `/plugin install mcp-builder@built-not-prompted` | Anthropic's tool for building MCP servers. Apache-2.0. |
+| linkedin-profile-scraper | `/plugin install linkedin-profile-scraper@built-not-prompted` | Scrapes a LinkedIn profile's posts and exports them as a CSV with engagement scores. Uses the Apify connector. |
 | power-tools | `/plugin install power-tools@built-not-prompted` | Every skill tool in one install. |
 
 ## Using a tool
