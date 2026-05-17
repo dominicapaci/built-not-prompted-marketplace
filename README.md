@@ -32,18 +32,28 @@ To grab everything at once, install the bundle: `/plugin install power-tools@bui
 
 When something new is added, type `/plugin marketplace update built-not-prompted`, then `/reload-plugins`. You're current.
 
-## The tools
+## Skills
 
-| Tool | Install | What it does |
+Skills are lightweight. Install one and it works right away, nothing to set up.
+
+| Skill | Install | What it does |
 | ---- | ------- | ------------ |
 | humanizer | `/plugin install humanizer@built-not-prompted` | Rewrites robotic, AI-sounding text so it sounds like you. |
-| pinterest | `/plugin install pinterest@built-not-prompted` | Connects your Pinterest account to Claude. Pull your numbers, write pins, and more. Has a short setup, covered in the classroom. |
-| tiktok-account-analysis | `/plugin install tiktok-account-analysis@built-not-prompted` | Scrapes any TikTok account and gives you a content report you can keep asking questions about. Tells you the scraping cost first. Uses the Apify connector. |
 | email-marketing | `/plugin install email-marketing@built-not-prompted` | Writes emails, newsletters, and full sequences, and helps fix open rates, deliverability, and list strategy. |
+| tiktok-account-analysis | `/plugin install tiktok-account-analysis@built-not-prompted` | Scrapes any TikTok account and gives you a content report you can keep asking questions about. Tells you the scraping cost first. Uses the Apify connector. |
+| linkedin-profile-scraper | `/plugin install linkedin-profile-scraper@built-not-prompted` | Scrapes a LinkedIn profile's posts and exports them as a CSV with engagement scores. Uses the Apify connector. |
 | skill-creator | `/plugin install skill-creator@built-not-prompted` | Anthropic's tool for building and improving your own Claude Code skills. Apache-2.0. |
 | mcp-builder | `/plugin install mcp-builder@built-not-prompted` | Anthropic's tool for building MCP servers. Apache-2.0. |
-| linkedin-profile-scraper | `/plugin install linkedin-profile-scraper@built-not-prompted` | Scrapes a LinkedIn profile's posts and exports them as a CSV with engagement scores. Uses the Apify connector. |
-| power-tools | `/plugin install power-tools@built-not-prompted` | Every skill tool in one install. |
+
+To grab every skill above in one install, use the bundle: `/plugin install power-tools@built-not-prompted`.
+
+## MCPs
+
+MCPs connect Claude to an outside service. They do more, and they take a little setup. The classroom walks you through it.
+
+| MCP | Install | What it does |
+| ---- | ------- | ------------ |
+| pinterest | `/plugin install pinterest@built-not-prompted` | Connects your Pinterest account to Claude. Pull your numbers, write pins, and more. After installing, run `/pinterest:pinterest-setup` and Claude connects your account for you. |
 
 ## Using a tool
 
