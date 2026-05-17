@@ -69,7 +69,8 @@ When something new ships, run:
 | Tool | Install | What it does |
 | ---- | ------- | ------------ |
 | `humanizer` | `/plugin install humanizer@built-not-prompted` | Strips the tells of AI-written text out of any draft. Catches inflated phrasing, em dash overuse, the rule of three, AI vocabulary, and more, then rewrites it to read like a person wrote it. |
-| `power-tools` | `/plugin install power-tools@built-not-prompted` | The full bundle. Every tool above in a single install. |
+| `pinterest` | `/plugin install pinterest@built-not-prompted` | A Pinterest MCP server with 93 tools for pins, boards, search, ads, catalogs, and analytics. After installing, run `/pinterest:pinterest-setup` and Claude walks you through connecting your account. Requires Node.js. |
+| `power-tools` | `/plugin install power-tools@built-not-prompted` | The bundle of every skill-based tool above, in one install. MCP tools like `pinterest` are installed on their own, not part of this bundle. |
 
 More tools ship regularly. Each one gets a walkthrough video in the [Power Tools classroom](https://skool.com/built-not-prompted).
 
@@ -82,9 +83,15 @@ out of this draft") and Claude picks the tool, or call it directly:
 ## For maintainers
 
 Each tool is its own plugin under `plugins/<tool>/` and is the source of truth.
-The `power-tools` bundle re-packages every tool's skills so students can install
-everything at once — its `skills/` folder is generated. After adding or editing
-a tool, run `./sync-bundle.sh`, bump the relevant `version` fields, and commit.
+The `power-tools` bundle re-packages every skill-based tool so students can
+install everything at once. Its `skills/` folder is generated. After adding or
+editing a skill tool, run `./sync-bundle.sh`, bump the relevant `version`
+fields, and commit.
+
+The `pinterest` plugin carries a bundled copy of the Pinterest MCP server at
+`server/index.mjs`. To rebuild it after changing the server source, run esbuild
+against the server project and output to that path, then bump the `pinterest`
+plugin version. MCP plugins are skipped by `sync-bundle.sh` on purpose.
 
 ## Questions
 

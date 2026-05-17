@@ -1,0 +1,10 @@
+{
+  "name": "pinterest",
+  "description": "Pinterest MCP server with 93 tools for pins, boards, search, ads, catalogs, and analytics. Includes a guided token-setup skill.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dominic Capaci",
+    "email": "build@dominiccapaci.com"
+  },
+  "homepage": "https://skool.com/built-not-prompted"
+}

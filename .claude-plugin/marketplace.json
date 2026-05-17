@@ -13,6 +13,11 @@
       "description": "Strip the tells of AI-written text out of any draft."
     },
     {
+      "name": "pinterest",
+      "source": "./plugins/pinterest",
+      "description": "Pinterest MCP server: 93 tools for pins, boards, ads, catalogs, and analytics, plus a guided token-setup skill."
+    },
+    {
       "name": "power-tools",
       "source": "./plugins/power-tools",
       "description": "The full bundle. Every Built Not Prompted tool in one install."
